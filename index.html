@@ -1,388 +1,100 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кибербезопасность в Интернете | CyberShield</title>
-    <meta name="description" content="Защитите свои данные от киберугроз. Рекомендации по безопасности, методы защиты и актуальные тенденции">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    
-    <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #1a365d 0%, #153e75 50%, #2c5282 100%);
-            animation: gradientShift 8s ease infinite;
-            background-size: 200% 200%;
-        }
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-10px) scale(1.02);
-            transition: all 0.3s ease;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        }
-        
-        .pulse-glow {
-            animation: pulseGlow 2s ease-in-out infinite alternate;
-        }
-        @keyframes pulseGlow {
-            from { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
-            to { box-shadow: 0 0 40px rgba(59, 130, 246, 0.6); }
-        }
-        
-        .floating {
-            animation: floating 3s ease-in-out infinite;
-        }
-        @keyframes floating {
-            0% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(5deg); }
-            100% { transform: translateY(0px) rotate(0deg); }
-        }
-        
-        .cyber-grid {
-            background-image: 
-                linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
-            background-size: 30px 30px;
-        }
-        
-        .typewriter {
-            overflow: hidden;
-            border-right: 3px solid #3b82f6;
-            white-space: nowrap;
-            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-        }
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #3b82f6 }
-        }
-        
-        .hacker-text {
-            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: hackerGradient 3s ease infinite;
-        }
-        @keyframes hackerGradient {
-            0% { background-position: 0% 50% }
-            50% { background-position: 100% 50% }
-            100% { background-position: 0% 50% }
-        }
-    </style>
-</head>
-<body class="bg-gray-50 font-sans antialiased cyber-grid">
-    <!-- Navigation -->
-    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-400 floating">CyberShield</a>
-            <div class="hidden md:flex space-x-8">
-                <a href="#about" class="hover:text-blue-400 transition duration-300">Что это?</a>
-                <a href="#threats" class="hover:text-blue-400 transition duration-300">Угрозы</a>
-                <a href="#protection" class="hover:text-blue-400 transition duration-300">Защита</a>
-                <a href="#training" class="hover:text-blue-400 transition duration-300">Обучение</a>
-                <a href="#contact" class="hover:text-blue-400 transition duration-300">Контакты</a>
-            </div>
-            <button class="md:hidden focus:outline-none" aria-label="Меню">
-                <i data-feather="menu"></i>
-            </button>
+<!-- Threats Section - ОБНОВЛЕННАЯ -->
+<section id="threats" class="py-16 px-6 bg-gray-100">
+    <div class="container mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Основные киберугрозы</h2>
+            <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
         </div>
-    </nav>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Threat 1 -->
+            <a href="phishing.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                     alt="Фишинг" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Фишинг</h3>
+                    <p class="text-gray-600">Мошеннические письма и сайты для кражи данных</p>
+                    <div class="mt-4 text-blue-500 font-semibold flex items-center">
+                        Узнать подробнее 
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </div>
+                </div>
+            </a>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient text-white py-20 px-6">
-        <div class="container mx-auto text-center" data-aos="fade-up">
-            <div class="floating inline-block mb-6">
-                <i data-feather="shield" class="w-20 h-20 text-blue-300"></i>
-            </div>
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 typewriter">Кибербезопасность в цифровую эпоху</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto hacker-text">Защитите свои данные от современных киберугроз</p>
-            <a href="#about" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center pulse-glow">
-                Узнать больше
-                <i data-feather="arrow-down" class="ml-2"></i>
+            <!-- Threat 2 -->
+            <a href="malware.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                     alt="Вредоносное ПО" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Вредоносное ПО</h3>
+                    <p class="text-gray-600">Вирусы, трояны, ransomware и шпионские программы</p>
+                    <div class="mt-4 text-blue-500 font-semibold flex items-center">
+                        Узнать подробнее 
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Threat 3 -->
+            <a href="ddos.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                     alt="DDoS-атаки" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">DDoS-атаки</h3>
+                    <p class="text-gray-600">Перегрузка систем трафиком для нарушения доступности</p>
+                    <div class="mt-4 text-blue-500 font-semibold flex items-center">
+                        Узнать подробнее 
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Threat 4 -->
+            <a href="credentials.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1611606063065-ee7946f0787a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                     alt="Кража учётных данных" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Кража учётных данных</h3>
+                    <p class="text-gray-600">Взлом паролей и компрометация аккаунтов</p>
+                    <div class="mt-4 text-blue-500 font-semibold flex items-center">
+                        Узнать подробнее 
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Threat 5 -->
+            <a href="cloud.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                     alt="Облачные уязвимости" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Облачные уязвимости</h3>
+                    <p class="text-gray-600">Неправильные настройки облачных сервисов</p>
+                    <div class="mt-4 text-blue-500 font-semibold flex items-center">
+                        Узнать подробнее 
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Threat 6 -->
+            <a href="iot.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                     alt="Мобильные угрозы" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Мобильные угрозы</h3>
+                    <p class="text-gray-600">Вредоносные приложения и атаки на IoT-устройства</p>
+                    <div class="mt-4 text-blue-500 font-semibold flex items-center">
+                        Узнать подробнее 
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </div>
+                </div>
             </a>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-16 px-6 bg-white">
-        <div class="container mx-auto">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Что такое кибербезопасность?</h2>
-                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                         alt="Кибербезопасность" 
-                         class="rounded-lg w-full h-64 object-cover shadow-xl floating">
-                </div>
-                <div data-aos="fade-left">
-                    <p class="text-gray-700 text-lg mb-6">
-                        Кибербезопасность — это практика защиты систем, сетей и программ от цифровых атак. 
-                    </p>
-                    <p class="text-gray-700 text-lg mb-6">
-                        Эти атаки обычно направлены на получение доступа, изменение или уничтожение конфиденциальной информации.
-                    </p>
-                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500 pulse-glow">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2">Основные направления:</h3>
-                        <ul class="list-disc pl-5 text-gray-700">
-                            <li class="mb-2">Защита информации (шифрование, контроль доступа)</li>
-                            <li class="mb-2">Безопасность сетей и приложений</li>
-                            <li class="mb-2">Операционная безопасность и восстановление</li>
-                            <li>Обучение пользователей и осведомлённость</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Threats Section -->
-    <section id="threats" class="py-16 px-6 bg-gray-100">
-        <div class="container mx-auto">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Основные киберугрозы</h2>
-                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Threat 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover" data-aos="fade-up">
-                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         alt="Фишинг" 
-                         class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2">Фишинг</h3>
-                        <p class="text-gray-600">Мошеннические письма и сайты для кражи данных</p>
-                    </div>
-                </div>
-
-                <!-- Threat 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         alt="Вредоносное ПО" 
-                         class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2">Вредоносное ПО</h3>
-                        <p class="text-gray-600">Вирусы, трояны, ransomware и шпионские программы</p>
-                    </div>
-                </div>
-
-                <!-- Threat 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         alt="DDoS-атаки" 
-                         class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2">DDoS-атаки</h3>
-                        <p class="text-gray-600">Перегрузка систем трафиком для нарушения доступности</p>
-                    </div>
-                </div>
-
-                <!-- Threat 4 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover" data-aos="fade-up">
-                    <img src="https://images.unsplash.com/photo-1611606063065-ee7946f0787a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         alt="Кража учётных данных" 
-                         class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2">Кража учётных данных</h3>
-                        <p class="text-gray-600">Взлом паролей и компрометация аккаунтов</p>
-                    </div>
-                </div>
-
-                <!-- Threat 5 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         alt="Облачные уязвимости" 
-                         class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2">Облачные уязвимости</h3>
-                        <p class="text-gray-600">Неправильные настройки облачных сервисов</p>
-                    </div>
-                </div>
-
-                <!-- Threat 6 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                         alt="Мобильные угрозы" 
-                         class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl text-gray-800 mb-2">Мобильные угрозы</h3>
-                        <p class="text-gray-600">Вредоносные приложения и атаки на IoT-устройства</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Training Section -->
-    <section id="training" class="py-16 px-6 bg-white">
-        <div class="container mx-auto">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Обучающие материалы</h2>
-                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div data-aos="fade-right">
-                    <div class="bg-gray-800 rounded-xl p-8 shadow-2xl pulse-glow">
-                        <h3 class="text-2xl font-bold text-white mb-4">Видео-урок: Основы кибербезопасности</h3>
-                        <div class="aspect-w-16 aspect-h-9 bg-black rounded-lg mb-6 flex items-center justify-center">
-                            <div class="text-center text-white p-8">
-                                <i data-feather="play-circle" class="w-16 h-16 text-blue-400 mx-auto mb-4 floating"></i>
-                                <p class="text-xl hacker-text">БЕСПЛАТНЫЙ ДОСТУП</p>
-                                <p class="text-sm mt-2 text-gray-300">Нажмите для просмотра</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-300 mb-6">
-                            В этом видео вы узнаете основные принципы защиты данных и создания надежных паролей.
-                        </p>
-                        <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 pulse-glow">
-                            <i data-feather="play" class="inline w-5 h-5 mr-2"></i>
-                            Смотреть сейчас
-                        </button>
-                    </div>
-                </div>
-                
-                <div data-aos="fade-left">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Бесплатные уроки</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start bg-white p-6 rounded-lg shadow-md card-hover">
-                            <div class="bg-blue-100 p-3 rounded-full mr-4 floating">
-                                <i data-feather="lock" class="text-blue-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-gray-800 mb-2">Создание надежных паролей</h4>
-                                <p class="text-gray-600">Узнайте как создавать и хранить безопасные пароли</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start bg-white p-6 rounded-lg shadow-md card-hover">
-                            <div class="bg-green-100 p-3 rounded-full mr-4 floating">
-                                <i data-feather="shield" class="text-green-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-gray-800 mb-2">Защита от фишинга</h4>
-                                <p class="text-gray-600">Как распознавать мошеннические письма и сайты</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start bg-white p-6 rounded-lg shadow-md card-hover">
-                            <div class="bg-purple-100 p-3 rounded-full mr-4 floating">
-                                <i data-feather="wifi" class="text-purple-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg text-gray-800 mb-2">Безопасность в сетях</h4>
-                                <p class="text-gray-600">Защита при использовании публичного Wi-Fi</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 px-6 bg-gray-100">
-        <div class="container mx-auto">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Контакты</h2>
-                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
-            </div>
-            
-            <div class="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto pulse-glow" data-aos="zoom-in">
-                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Свяжитесь для консультации</h3>
-                <div class="text-center space-y-4">
-                    <div class="flex items-center justify-center">
-                        <i data-feather="mail" class="text-blue-500 mr-3"></i>
-                        <span class="text-lg text-gray-700">nikitkarylit228@gmail.com</span>
-                    </div>
-                    <p class="text-gray-600">Консультации по кибербезопасности и обучение</p>
-                    <div class="pt-4">
-                        <a href="mailto:nikitkarylit228@gmail.com" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-flex items-center pulse-glow">
-                            <i data-feather="send" class="mr-2"></i>
-                            Написать на почту
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 px-6">
-        <div class="container mx-auto">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold text-blue-400 mb-4 floating">CyberShield</h3>
-                    <p class="text-gray-400">
-                        Защита в цифровом мире для каждого. Консультации и обучение.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-4">Контакты</h4>
-                    <div class="space-y-2">
-                        <div class="flex items-center">
-                            <i data-feather="mail" class="mr-3 text-blue-400"></i>
-                            <a href="mailto:nikitkarylit228@gmail.com" class="text-gray-400 hover:text-blue-400 transition">
-                                nikitkarylit228@gmail.com
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-bold text-lg mb-4">Быстрые ссылки</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#about" class="text-gray-400 hover:text-blue-400 transition">О кибербезопасности</a></li>
-                        <li><a href="#threats" class="text-gray-400 hover:text-blue-400 transition">Угрозы</a></li>
-                        <li><a href="#training" class="text-gray-400 hover:text-blue-400 transition">Обучение</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-                <p>© 2024 CyberShield. nikitkarylit228@gmail.com</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Инициализация анимаций
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            offset: 100
-        });
-        
-        // Инициализация иконок
-        document.addEventListener('DOMContentLoaded', function() {
-            feather.replace();
-        });
-        
-        // Плавная прокрутка
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+    </div>
+</section>
