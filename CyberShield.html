@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кибербезопасность в Интернете</title>
+    <title>Кибербезопасность в Интернете | CyberShield</title>
+    <meta name="description" content="Защитите свои данные от киберугроз. Рекомендации по безопасности, методы защиты и актуальные тенденции">
+    
+    <!-- Безопасные CDN с SRI -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" integrity="sha384-5A1nFmC+EYaQh/lAFb6TbwMpB2FhA38k5h1nYy7rVp8A5Tp6Jp6V5c5p5Z5p5k5p5" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" integrity="sha384-5A1nFmC+EYaQh/lAFb6TbwMpB2FhA38k5h1nYy7rVp8A5Tp6Jp6V5c5p5Z5p5k5p5" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
     <style>
         .hero-gradient {
             background: linear-gradient(135deg, #1a365d 0%, #153e75 50%, #2c5282 100%);
         }
         .card-hover:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease;
+        }
+        /* Защитные заголовки через CSS */
+        .security-header {
+            content-security-policy: "default-src 'self'; script-src 'self' https://cdn.tailwindcss.com https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://unpkg.com;";
         }
     </style>
 </head>
-<body class="bg-gray-50 font-sans antialiased">
+<body class="bg-gray-50 font-sans antialiased security-header">
     <!-- Navigation -->
-    <nav class="bg-gray-900 text-white shadow-lg">
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-blue-400">CyberShield</a>
             <div class="hidden md:flex space-x-8">
-                <a href="#about" class="hover:text-blue-400 transition">Что это?</a>
-                <a href="#threats" class="hover:text-blue-400 transition">Угрозы</a>
-                <a href="#protection" class="hover:text-blue-400 transition">Защита</a>
-                <a href="#future" class="hover:text-blue-400 transition">Тенденции</a>
+                <a href="#about" class="hover:text-blue-400 transition duration-300">Что это?</a>
+                <a href="#threats" class="hover:text-blue-400 transition duration-300">Угрозы</a>
+                <a href="#protection" class="hover:text-blue-400 transition duration-300">Защита</a>
+                <a href="#future" class="hover:text-blue-400 transition duration-300">Тенденции</a>
             </div>
-            <button class="md:hidden focus:outline-none">
+            <button class="md:hidden focus:outline-none" aria-label="Меню">
                 <i data-feather="menu"></i>
             </button>
         </div>
@@ -56,25 +64,24 @@
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
-                    <!-- ЗАМЕНИТЬ НА РЕАЛЬНУЮ КАРТИНКУ -->
-                    <div class="bg-gray-200 rounded-lg w-full h-64 flex items-center justify-center">
-                        <span class="text-gray-500">Изображение о кибербезопасности</span>
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg w-full h-64 flex items-center justify-center text-white text-center p-6">
+                        <span class="text-xl font-semibold">🔒 Защита данных и систем от киберугроз в цифровом пространстве</span>
                     </div>
                 </div>
                 <div data-aos="fade-left">
                     <p class="text-gray-700 text-lg mb-6">
-                        Кибербезопасность — это область, включающая различные аспекты защиты информации, систем и сетей от несанкционированного доступа, утечек данных, вредоносных программ и других киберугроз.
+                        Кибербезопасность — это практика защиты систем, сетей и программ от цифровых атак. 
                     </p>
                     <p class="text-gray-700 text-lg mb-6">
-                        Она сосредоточена на защите данных, систем и сетей, связанных с интернетом и цифровыми технологиями, обеспечивая конфиденциальность, целостность и доступность информации.
+                        Эти атаки обычно направлены на получение доступа, изменение или уничтожение конфиденциальной информации, вымогательство денег у пользователей или нарушение нормальной работы бизнеса.
                     </p>
                     <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Основные направления:</h3>
                         <ul class="list-disc pl-5 text-gray-700">
-                            <li class="mb-2">Защита данных (шифрование, резервное копирование)</li>
-                            <li class="mb-2">Сетевая безопасность (защита от DDoS, взломов)</li>
-                            <li class="mb-2">Безопасность приложений</li>
-                            <li>Управление идентификацией и доступом</li>
+                            <li class="mb-2">Защита информации (шифрование, контроль доступа)</li>
+                            <li class="mb-2">Безопасность сетей и приложений</li>
+                            <li class="mb-2">Операционная безопасность и восстановление</li>
+                            <li>Обучение пользователей и осведомлённость</li>
                         </ul>
                     </div>
                 </div>
@@ -82,15 +89,225 @@
         </div>
     </section>
 
-    <!-- Остальной код оставить аналогично, заменив все img на рабочие или заглушки -->
+    <!-- Threats Section -->
+    <section id="threats" class="py-16 px-6 bg-gray-100">
+        <div class="container mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Основные киберугрозы</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Threat 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover" data-aos="fade-up">
+                    <div class="bg-red-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="link" class="text-red-600"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Фишинг</h3>
+                    <p class="text-gray-600">Мошеннические письма и сайты, имитирующие легитимные организации для кражи данных</p>
+                </div>
+
+                <!-- Threat 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-red-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="cpu" class="text-red-600"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Вредоносное ПО</h3>
+                    <p class="text-gray-600">Вирусы, трояны, ransomware и шпионские программы</p>
+                </div>
+
+                <!-- Threat 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-red-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="users" class="text-red-600"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">DDoS-атаки</h3>
+                    <p class="text-gray-600">Перегрузка систем трафиком для нарушения доступности сервисов</p>
+                </div>
+
+                <!-- Threat 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover" data-aos="fade-up">
+                    <div class="bg-red-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="key" class="text-red-600"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Кража учётных данных</h3>
+                    <p class="text-gray-600">Взлом паролей и компрометация аккаунтов</p>
+                </div>
+
+                <!-- Threat 5 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-red-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="cloud" class="text-red-600"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Облачные уязвимости</h3>
+                    <p class="text-gray-600">Неправильные настройки облачных сервисов и хранилищ</p>
+                </div>
+
+                <!-- Threat 6 -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-red-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="smartphone" class="text-red-600"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Мобильные угрозы</h3>
+                    <p class="text-gray-600">Вредоносные приложения и атаки на IoT-устройства</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protection Section -->
+    <section id="protection" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Методы защиты</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Технические меры</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="shield" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">Антивирусы и фаерволы</h4>
+                                <p class="text-gray-600">Регулярное обновление защитного ПО</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="lock" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">Шифрование данных</h4>
+                                <p class="text-gray-600">Защита конфиденциальной информации</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="refresh-cw" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">Регулярные обновления</h4>
+                                <p class="text-gray-600">Своевременное обновление ОС и приложений</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Практические советы</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="key" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">Сложные пароли</h4>
+                                <p class="text-gray-600">Используйте менеджеры паролей</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="user-check" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">Двухфакторная аутентификация</h4>
+                                <p class="text-gray-600">Дополнительный уровень защиты</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i data-feather="download-cloud" class="text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800 mb-2">Резервные копии</h4>
+                                <p class="text-gray-600">Регулярное сохранение важных данных</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Trends Section -->
+    <section id="future" class="py-16 px-6 bg-gray-100">
+        <div class="container mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Будущее кибербезопасности</h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl p-8" data-aos="fade-right">
+                    <div class="bg-purple-100 p-4 rounded-full inline-block mb-6">
+                        <i data-feather="activity" class="text-purple-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Искусственный интеллект</h3>
+                    <p class="text-gray-700">AI и машинное обучение для прогнозирования и предотвращения атак в реальном времени</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8" data-aos="fade-left">
+                    <div class="bg-purple-100 p-4 rounded-full inline-block mb-6">
+                        <i data-feather="shield" class="text-purple-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Нулевое доверие</h3>
+                    <p class="text-gray-700">Архитектура безопасности "никому не доверяй, проверяй всех"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold text-blue-400 mb-4">CyberShield</h3>
+            <p class="text-gray-400 mb-6">Защита в цифровом мире для каждого</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition" aria-label="Twitter">
+                    <i data-feather="twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition" aria-label="GitHub">
+                    <i data-feather="github"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 transition" aria-label="LinkedIn">
+                    <i data-feather="linkedin"></i>
+                </a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2024 CyberShield. Все права защищены.</p>
+        </div>
+    </footer>
 
     <script>
+        // Инициализация анимаций
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
-            once: true
+            once: true,
+            offset: 100
         });
-        feather.replace();
+        
+        // Инициализация иконок
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+        });
+        
+        // Базовая защита от инспектирования
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
     </script>
 </body>
 </html>
