@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS атаки | CyberShield</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-400">CyberShield</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-blue-400 transition">Главная</a>
+                <a href="index.html#threats" class="hover:text-blue-400 transition">Все угрозы</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-gradient text-white py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">DDoS атаки</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Перегрузка систем трафиком для нарушения доступности</p>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-12 items-start mb-16">
+                <div data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="DDoS атака" 
+                         class="rounded-lg shadow-xl w-full">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Что такое DDoS атака?</h2>
+                    <p class="text-gray-700 text-lg mb-6">
+                        <strong>DDoS (Distributed Denial of Service)</strong> — это кибератака, при которой злоумышленник пытается сделать сетевой ресурс недоступным для пользователей, перегружая его огромным количеством запросов.
+                    </p>
+                    
+                    <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                        <h3 class="font-bold text-xl text-gray-800 mb-3">⚡ Как работает DDoS:</h3>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Создается сеть зараженных компьютеров (ботнет)</li>
+                            <li>Все устройства одновременно отправляют запросы к цели</li>
+                            <li>Сервер перегружается и перестает отвечать</li>
+                            <li>Настоящие пользователи не могут получить доступ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Типы DDoS -->
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">🎯 Типы DDoS атак</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Объемные атаки</h4>
+                        <p class="text-gray-600">Переполнение канала связи большим объемом трафика</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Протокольные атаки</h4>
+                        <p class="text-gray-600">Использование уязвимостей сетевых протоколов</p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Прикладные атаки</h4>
+                        <p class="text-gray-600">Целевые атаки на конкретные приложения</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Защита -->
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">🛡️ Защита от DDoS</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start bg-white p-6 rounded-lg shadow-md">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i data-feather="cloud" class="text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">CDN сервисы</h4>
+                            <p class="text-gray-600">Используйте Cloudflare, Akamai для распределения нагрузки</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start bg-white p-6 rounded-lg shadow-md">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="shield" class="text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">DDoS защита</h4>
+                            <p class="text-gray-600">Специализированные сервисы защиты от DDoS</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start bg-white p-6 rounded-lg shadow-md">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i data-feather="activity" class="text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">Мониторинг</h4>
+                            <p class="text-gray-600">Постоянный мониторинг сетевой активности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <a href="index.html#threats" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+                <i data-feather="arrow-left" class="mr-2"></i>
+                Вернуться ко всем угрозам
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-500">© 2024 CyberShield. nikitkarylit228@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>
