@@ -5,40 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кибербезопасность | CyberShield</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    
-    <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #1a365d 0%, #153e75 50%, #2c5282 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            transition: all 0.3s ease;
-        }
-    </style>
 </head>
 <body class="bg-gray-50 font-sans antialiased">
-    <!-- Navigation с щитом -->
+    <!-- Navigation -->
     <nav class="bg-gray-900 text-white shadow-lg">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-400 flex items-center">
-                <!-- Щит -->
-                <svg class="w-8 h-8 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                </svg>
-                Кибербезопасность
-            </a>
-            <div class="hidden md:flex space-x-8">
-                <a href="#threats" class="hover:text-blue-400 transition">Угрозы</a>
-                <a href="#contact" class="hover:text-blue-400 transition">Контакты</a>
+        <div class="container mx-auto px-6 py-3">
+            <div class="text-2xl font-bold text-blue-400 text-center">
+                🛡️ Кибербезопасность
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient text-white py-20 px-6">
+    <section class="bg-blue-800 text-white py-20 px-6">
         <div class="container mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Кибербезопасность</h1>
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Защитите свои данные от современных киберугроз</p>
@@ -54,79 +33,85 @@
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Threat 1 - Фишинг -->
-                <a href="phishing.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-3411373_640.jpg" alt="Фишинг" class="w-full h-48 object-cover bg-gray-200">
+                <a href="phishing.html" class="bg-white rounded-lg shadow-md overflow-hidden block border-2 border-blue-200 hover:border-blue-400 transition">
+                    <div class="w-full h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-6xl">
+                        📧
+                    </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Фишинг</h3>
                         <p class="text-gray-600">Мошеннические письма и сайты для кражи данных</p>
-                        <div class="mt-4 text-blue-500 font-semibold flex items-center">
-                            Узнать подробнее 
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        <div class="mt-4 text-blue-500 font-semibold">
+                            Узнать подробнее →
                         </div>
                     </div>
                 </a>
 
                 <!-- Threat 2 - Вредоносное ПО -->
-                <a href="malware.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://cdn.pixabay.com/photo/2021/01/30/20/32/cyber-5965762_640.jpg" alt="Вредоносное ПО" class="w-full h-48 object-cover bg-gray-200">
+                <a href="malware.html" class="bg-white rounded-lg shadow-md overflow-hidden block border-2 border-red-200 hover:border-red-400 transition">
+                    <div class="w-full h-48 bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center text-white text-6xl">
+                        🦠
+                    </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Вредоносное ПО</h3>
                         <p class="text-gray-600">Вирусы, трояны, ransomware и шпионские программы</p>
-                        <div class="mt-4 text-blue-500 font-semibold flex items-center">
-                            Узнать подробнее 
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        <div class="mt-4 text-blue-500 font-semibold">
+                            Узнать подробнее →
                         </div>
                     </div>
                 </a>
 
                 <!-- Threat 3 - DDoS -->
-                <a href="ddos.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://cdn.pixabay.com/photo/2020/05/15/18/46/cyber-5175989_640.jpg" alt="DDoS-атаки" class="w-full h-48 object-cover bg-gray-200">
+                <a href="ddos.html" class="bg-white rounded-lg shadow-md overflow-hidden block border-2 border-purple-200 hover:border-purple-400 transition">
+                    <div class="w-full h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-white text-6xl">
+                        🌐
+                    </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">DDoS-атаки</h3>
                         <p class="text-gray-600">Перегрузка систем трафиком для нарушения доступности</p>
-                        <div class="mt-4 text-blue-500 font-semibold flex items-center">
-                            Узнать подробнее 
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        <div class="mt-4 text-blue-500 font-semibold">
+                            Узнать подробнее →
                         </div>
                     </div>
                 </a>
 
                 <!-- Threat 4 - Кража данных -->
-                <a href="credentials.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://cdn.pixabay.com/photo/2019/06/19/17/24/security-4286275_640.jpg" alt="Кража учётных данных" class="w-full h-48 object-cover bg-gray-200">
+                <a href="credentials.html" class="bg-white rounded-lg shadow-md overflow-hidden block border-2 border-orange-200 hover:border-orange-400 transition">
+                    <div class="w-full h-48 bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center text-white text-6xl">
+                        🔑
+                    </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Кража учётных данных</h3>
                         <p class="text-gray-600">Взлом паролей и компрометация аккаунтов</p>
-                        <div class="mt-4 text-blue-500 font-semibold flex items-center">
-                            Узнать подробнее 
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        <div class="mt-4 text-blue-500 font-semibold">
+                            Узнать подробнее →
                         </div>
                     </div>
                 </a>
 
                 <!-- Threat 5 - Облачные уязвимости -->
-                <a href="cloud.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://cdn.pixabay.com/photo/2021/09/05/18/39/cyber-6600033_640.jpg" alt="Облачные уязвимости" class="w-full h-48 object-cover bg-gray-200">
+                <a href="cloud.html" class="bg-white rounded-lg shadow-md overflow-hidden block border-2 border-green-200 hover:border-green-400 transition">
+                    <div class="w-full h-48 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center text-white text-6xl">
+                        ☁️
+                    </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Облачные уязвимости</h3>
                         <p class="text-gray-600">Неправильные настройки облачных сервисов</p>
-                        <div class="mt-4 text-blue-500 font-semibold flex items-center">
-                            Узнать подробнее 
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        <div class="mt-4 text-blue-500 font-semibold">
+                            Узнать подробнее →
                         </div>
                     </div>
                 </a>
 
                 <!-- Threat 6 - IoT угрозы -->
-                <a href="iot.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://cdn.pixabay.com/photo/2021/01/29/08/44/network-5960012_640.jpg" alt="Мобильные угрозы" class="w-full h-48 object-cover bg-gray-200">
+                <a href="iot.html" class="bg-white rounded-lg shadow-md overflow-hidden block border-2 border-indigo-200 hover:border-indigo-400 transition">
+                    <div class="w-full h-48 bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center text-white text-6xl">
+                        📱
+                    </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Мобильные угрозы</h3>
                         <p class="text-gray-600">Вредоносные приложения и атаки на IoT-устройства</p>
-                        <div class="mt-4 text-blue-500 font-semibold flex items-center">
-                            Узнать подробнее 
-                            <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        <div class="mt-4 text-blue-500 font-semibold">
+                            Узнать подробнее →
                         </div>
                     </div>
                 </a>
@@ -150,10 +135,5 @@
             <p class="text-gray-500">© 2024 CyberShield. nikitkarylit228@gmail.com</p>
         </div>
     </footer>
-
-    <script>
-        AOS.init();
-        feather.replace();
-    </script>
 </body>
 </html>
