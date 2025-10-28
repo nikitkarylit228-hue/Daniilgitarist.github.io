@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фишинг атаки | CyberShield</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a365d 0%, #153e75 50%, #2c5282 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-400">CyberShield</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-blue-400 transition">Главная</a>
+                <a href="index.html#threats" class="hover:text-blue-400 transition">Все угрозы</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Фишинг атаки</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Мошеннические письма и сайты для кражи данных</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-12 items-start mb-16">
+                <div data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Фишинг атака" 
+                         class="rounded-lg shadow-xl w-full">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Что такое фишинг?</h2>
+                    <p class="text-gray-700 text-lg mb-6">
+                        <strong>Фишинг</strong> — это вид интернет-мошенничества, целью которого является получение доступа к конфиденциальным данным пользователей. Название происходит от английского "fishing" — рыбная ловля.
+                    </p>
+                    
+                    <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 mb-6">
+                        <h3 class="font-bold text-xl text-gray-800 mb-3">🔍 Как распознать фишинг:</h3>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>Подозрительный адрес отправителя</li>
+                            <li>Ошибки в написании доменных имен</li>
+                            <li>Срочные требования действий</li>
+                            <li>Запрос конфиденциальной информации</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Методы защиты -->
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">🛡️ Методы защиты</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                        <h4 class="font-bold text-lg mb-3">Внимательность</h4>
+                        <p class="text-gray-600">Всегда проверяйте адрес отправителя и URL сайта</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                        <h4 class="font-bold text-lg mb-3">Антифишинг</h4>
+                        <p class="text-gray-600">Используйте браузеры с антифишинговой защитой</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Main -->
+    <section class="py-12 px-6 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <a href="index.html#threats" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+                <i data-feather="arrow-left" class="mr-2"></i>
+                Вернуться ко всем угрозам
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-500">© 2024 CyberShield. nikitkarylit228@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>
