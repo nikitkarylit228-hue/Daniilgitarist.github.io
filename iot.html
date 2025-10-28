@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мобильные и IoT угрозы | CyberShield</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-400">CyberShield</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-blue-400 transition">Главная</a>
+                <a href="index.html#threats" class="hover:text-blue-400 transition">Все угрозы</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-gradient text-white py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">IoT и мобильные угрозы</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Вредоносные приложения и атаки на IoT-устройства</p>
+        </div>
+    </section>
+
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto max-w-4xl">
+            <div class="grid md:grid-cols-2 gap-12 items-start mb-16">
+                <div data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="IoT угрозы" 
+                         class="rounded-lg shadow-xl w-full">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Что такое IoT угрозы?</h2>
+                    <p class="text-gray-700 text-lg mb-6">
+                        <strong>IoT (Internet of Things) угрозы</strong> — это кибератаки на умные устройства, подключенные к интернету: камеры, умные дома, медицинские устройства, промышленное оборудование.
+                    </p>
+                    
+                    <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                        <h3 class="font-bold text-xl text-gray-800 mb-3">🎯 Основные цели атак:</h3>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li><strong>Умные камеры</strong> - шпионаж и слежка</li>
+                            <li><strong>Медицинские устройства</strong> - угроза жизни</li>
+                            <li><strong>Промышленные системы</strong> - саботаж производства</li>
+                            <li><strong>Умные автомобили</strong> - угон и аварии</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Примеры атак -->
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">📱 Мобильные угрозы</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Вредоносные приложения</h4>
+                        <p class="text-gray-600">Приложения из неофициальных магазинов с spyware</p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">SMS мошенничество</h4>
+                        <p class="text-gray-600">Фишинг через SMS и мессенджеры</p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Уязвимости ОС</h4>
+                        <p class="text-gray-600">Эксплойты для Android и iOS</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Небезопасный Wi-Fi</h4>
+                        <p class="text-gray-600">Перехват данных в публичных сетях</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Известные атаки -->
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">🌐 Известные IoT атаки</h2>
+                <div class="space-y-6">
+                    <div class="bg-yellow-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-2">Mirai Botnet (2016)</h4>
+                        <p class="text-gray-700">Ботнет из 600,000 зараженных IoT устройств, который вызвал крупнейший DDoS атаку на Dyn DNS</p>
+                        <p class="text-sm text-gray-500 mt-2"><strong>Результат:</strong> Отключение Twitter, Netflix, Reddit</p>
+                    </div>
+                    
+                    <div class="bg-orange-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-2">St. Jude Medical (2017)</h4>
+                        <p class="text-gray-700">Уязвимости в кардиостимуляторах позволяли удаленно отключать устройства</p>
+                        <p class="text-sm text-gray-500 mt-2"><strong>Риск:</strong> Угроза жизни пациентов</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Защита -->
+            <div class="mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">🛡️ Защита IoT и мобильных устройств</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start bg-white p-6 rounded-lg shadow-md">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i data-feather="wifi" class="text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">Смена паролей по умолчанию</h4>
+                            <p class="text-gray-600">Всегда меняйте стандартные пароли на IoT устройствах</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start bg-white p-6 rounded-lg shadow-md">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="refresh-cw" class="text-green-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">Регулярные обновления</h4>
+                            <p class="text-gray-600">Обновляйте прошивки устройств и мобильные ОС</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start bg-white p-6 rounded-lg shadow-md">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i data-feather="shield" class="text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">Сегментация сети</h4>
+                            <p class="text-gray-600">Отделяйте IoT устройства в гостевой сети</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start bg-white p-6 rounded-lg shadow-md">
+                        <div class="bg-orange-100 p-3 rounded-full mr-4">
+                            <i data-feather="smartphone" class="text-orange-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-gray-800 mb-2">Официальные магазины</h4>
+                            <p class="text-gray-600">Скачивайте приложения только из App Store/Google Play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Статистика -->
+            <div class="bg-gray-800 text-white p-8 rounded-xl" data-aos="fade-up">
+                <h2 class="text-2xl font-bold mb-6 text-center">📈 Статистика IoT</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-400 mb-2">75 млрд</div>
+                        <p class="text-gray-300">IoT устройств будет к 2025 году</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-green-400 mb-2">98%</div>
+                        <p class="text-gray-300">IoT трафика не шифруется</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-red-400 mb-2">57%</div>
+                        <p class="text-gray-300">IoT устройств уязвимы к средним и высоким рискам</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-400 mb-2">41%</div>
+                        <p class="text-gray-300">атак используют уязвимости IoT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <a href="index.html#threats" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-flex items-center">
+                <i data-feather="arrow-left" class="mr-2"></i>
+                Вернуться ко всем угрозам
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-500">© 2024 CyberShield. nikitkarylit228@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>
