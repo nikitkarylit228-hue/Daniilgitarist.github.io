@@ -20,10 +20,16 @@
     </style>
 </head>
 <body class="bg-gray-50 font-sans antialiased">
-    <!-- Navigation -->
+    <!-- Navigation с щитом -->
     <nav class="bg-gray-900 text-white shadow-lg">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-400">CyberShield</a>
+            <a href="#" class="text-2xl font-bold text-blue-400 flex items-center">
+                <!-- Щит -->
+                <svg class="w-8 h-8 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                Кибербезопасность
+            </a>
             <div class="hidden md:flex space-x-8">
                 <a href="#threats" class="hover:text-blue-400 transition">Угрозы</a>
                 <a href="#contact" class="hover:text-blue-400 transition">Контакты</a>
@@ -49,7 +55,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Threat 1 - Фишинг -->
                 <a href="phishing.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Фишинг" class="w-full h-48 object-cover bg-gray-200" loading="lazy">
+                    <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-3411373_640.jpg" alt="Фишинг" class="w-full h-48 object-cover bg-gray-200">
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Фишинг</h3>
                         <p class="text-gray-600">Мошеннические письма и сайты для кражи данных</p>
@@ -62,7 +68,7 @@
 
                 <!-- Threat 2 - Вредоносное ПО -->
                 <a href="malware.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Вредоносное ПО" class="w-full h-48 object-cover bg-gray-200" loading="lazy">
+                    <img src="https://cdn.pixabay.com/photo/2021/01/30/20/32/cyber-5965762_640.jpg" alt="Вредоносное ПО" class="w-full h-48 object-cover bg-gray-200">
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Вредоносное ПО</h3>
                         <p class="text-gray-600">Вирусы, трояны, ransomware и шпионские программы</p>
@@ -75,7 +81,7 @@
 
                 <!-- Threat 3 - DDoS -->
                 <a href="ddos.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="DDoS-атаки" class="w-full h-48 object-cover bg-gray-200" loading="lazy">
+                    <img src="https://cdn.pixabay.com/photo/2020/05/15/18/46/cyber-5175989_640.jpg" alt="DDoS-атаки" class="w-full h-48 object-cover bg-gray-200">
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">DDoS-атаки</h3>
                         <p class="text-gray-600">Перегрузка систем трафиком для нарушения доступности</p>
@@ -88,7 +94,7 @@
 
                 <!-- Threat 4 - Кража данных -->
                 <a href="credentials.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Кража учётных данных" class="w-full h-48 object-cover bg-gray-200" loading="lazy">
+                    <img src="https://cdn.pixabay.com/photo/2019/06/19/17/24/security-4286275_640.jpg" alt="Кража учётных данных" class="w-full h-48 object-cover bg-gray-200">
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Кража учётных данных</h3>
                         <p class="text-gray-600">Взлом паролей и компрометация аккаунтов</p>
@@ -101,7 +107,7 @@
 
                 <!-- Threat 5 - Облачные уязвимости -->
                 <a href="cloud.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Облачные уязвимости" class="w-full h-48 object-cover bg-gray-200" loading="lazy">
+                    <img src="https://cdn.pixabay.com/photo/2021/09/05/18/39/cyber-6600033_640.jpg" alt="Облачные уязвимости" class="w-full h-48 object-cover bg-gray-200">
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Облачные уязвимости</h3>
                         <p class="text-gray-600">Неправильные настройки облачных сервисов</p>
@@ -114,7 +120,7 @@
 
                 <!-- Threat 6 - IoT угрозы -->
                 <a href="iot.html" class="bg-white rounded-lg shadow-md overflow-hidden card-hover block">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Мобильные угрозы" class="w-full h-48 object-cover bg-gray-200" loading="lazy">
+                    <img src="https://cdn.pixabay.com/photo/2021/01/29/08/44/network-5960012_640.jpg" alt="Мобильные угрозы" class="w-full h-48 object-cover bg-gray-200">
                     <div class="p-6">
                         <h3 class="font-bold text-xl text-gray-800 mb-2">Мобильные угрозы</h3>
                         <p class="text-gray-600">Вредоносные приложения и атаки на IoT-устройства</p>
